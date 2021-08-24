@@ -6,6 +6,12 @@
 </script>
 
 
+analytics.identify(' {{user.id}} ', {
+  name: '{{user.full-name}}',
+  email: '{{user.email-address}}'
+});
+
+
 <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/mqkwgjbr" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="full-name">Full Name</label>
